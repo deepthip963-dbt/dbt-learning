@@ -1,0 +1,8 @@
+sources:
+  - name: STAGING
+    database: ANALYTICS
+    schema: STAGING  
+    tables:
+      - name: LISTINGS
+      - name: BOOKINGS
+      - name: HOSTS
