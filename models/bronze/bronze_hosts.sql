@@ -1,4 +1,6 @@
-{{ config(materialized='incremental') }}
+{{ config(materialized='incremental',
+    incremental_strategy='append'
+) }}
 
 
 SELECT * FROM  {{ source('STAGING', 'HOSTS') }}
