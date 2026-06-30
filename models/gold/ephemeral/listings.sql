@@ -4,7 +4,7 @@
     )
 }}
 
-WITH listings AS 
+WITH LISTINGS AS 
 (
     SELECT 
         LISTING_ID,
@@ -17,4 +17,4 @@ WITH listings AS
     FROM 
         {{ ref('obt') }}
 )
-SELECT * FROM listings
+SELECT * FROM LISTINGS
