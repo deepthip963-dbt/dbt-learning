@@ -4,7 +4,7 @@
     )
 }}
 
-WITH bookings AS 
+WITH BOOKINGS AS 
 (
     SELECT 
         BOOKING_ID,
@@ -14,4 +14,4 @@ WITH bookings AS
     FROM 
         {{ ref('obt') }}
 )
-SELECT * FROM bookings
+SELECT * FROM BOOKINGS

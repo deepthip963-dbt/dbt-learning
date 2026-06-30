@@ -4,7 +4,7 @@
     )
 }}
 
-WITH hosts AS 
+WITH HOSTS AS 
 (
     SELECT 
         HOST_ID,
@@ -16,4 +16,4 @@ WITH hosts AS
     FROM 
         {{ ref('obt') }}
 )
-SELECT * FROM hosts
+SELECT * FROM HOSTS
