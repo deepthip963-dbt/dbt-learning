@@ -1,9 +1,6 @@
 {{ config(
     severity='warn') }}
 
-SELECT 
-    *
-FROM 
-    {{ source('staging','bookings') }}
+   SELECT 1 FROM  {{ source('STAGING','BOOKINGS') }}
 WHERE 
     BOOKING_AMOUNT < 200
